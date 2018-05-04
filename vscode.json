@@ -1,0 +1,28 @@
+{
+	"editor.minimap.enabled": true,
+	"editor.fontFamily": "consolas, 游ゴシック",
+	"editor.fontSize": 22,
+	"editor.insertSpaces": false,
+	"editor.formatOnType": true,
+	"editor.renderWhitespace": "all",
+	"editor.renderIndentGuides": true,
+	"editor.formatOnPaste": true,
+	"files.trimTrailingWhitespace": true,
+	"git.path": "D:\\Program Files\\Git\\bin\\git.exe",
+	"html.format.indentInnerHtml": true,
+	"php.validate.executablePath": "D:\\Program Files\\php-7.2.1\\php.exe",
+	"window.newWindowDimensions": "inherit",
+	"[markdown]": {
+		"files.trimTrailingWhitespace": false
+	},
+	"[typescript]": {
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+		}
+	},
+	"workbench.iconTheme": "vs-seti",
+	// "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
+	"terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
+	"window.zoomLevel": 0,
+	"extensions.ignoreRecommendations": false
+}
