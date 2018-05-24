@@ -24,5 +24,6 @@
 	// "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
 	"terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
 	"window.zoomLevel": 0,
-	"extensions.ignoreRecommendations": false
+	"extensions.ignoreRecommendations": false,
+	"phpcs.executablePath": "C:\\Users\\xxxx\\AppData\\Roaming\\Composer\\vendor\\bin\\phpcs.bat"
 }
