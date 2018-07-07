@@ -12,6 +12,7 @@
 	"html.format.indentInnerHtml": true,
 	"php.validate.executablePath": "D:\\Program Files\\php-7.2.1\\php.exe",
 	"window.newWindowDimensions": "inherit",
+	"window.titleBarStyle": "custom",
 	"[markdown]": {
 		"files.trimTrailingWhitespace": false
 	},
