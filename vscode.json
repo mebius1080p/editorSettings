@@ -1,30 +1,51 @@
+// 既定の設定を上書きするには、このファイル内に設定を挿入します
 {
-	"editor.minimap.enabled": true,
-	"editor.fontFamily": "consolas, 游ゴシック",
-	"editor.fontSize": 22,
-	"editor.insertSpaces": false,
-	"editor.formatOnType": true,
-	"editor.renderWhitespace": "all",
-	"editor.renderIndentGuides": true,
-	"editor.formatOnPaste": true,
-	"files.trimTrailingWhitespace": true,
-	"git.path": "D:\\Program Files\\Git\\bin\\git.exe",
-	"html.format.indentInnerHtml": true,
-	"php.validate.executablePath": "D:\\Program Files\\php-7.2.1\\php.exe",
-	"window.newWindowDimensions": "inherit",
-	"window.titleBarStyle": "custom",
+    "editor.minimap.enabled": true,
+    "editor.fontFamily": "consolas, 游ゴシック",
+    "editor.fontSize": 22,
+    "editor.insertSpaces": false,
+    "editor.formatOnType": true,
+    "editor.renderWhitespace": "all",
+    "editor.renderIndentGuides": true,
+    "files.trimTrailingWhitespace": true,
+    "files.associations": {
+        "**/*.yml": "ansible"
+    },
+    "git.path": "D:\\Program Files\\Git\\bin\\git.exe",
+    "html.format.indentInnerHtml": true,
+    "window.newWindowDimensions": "inherit",
+    "window.titleBarStyle": "custom",
 	"[markdown]": {
 		"files.trimTrailingWhitespace": false
-	},
-	"[typescript]": {
-		"editor.codeActionsOnSave": {
-			"source.organizeImports": true
-		}
-	},
-	"workbench.iconTheme": "vs-seti",
-	// "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
-	"terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
-	"window.zoomLevel": 0,
-	"extensions.ignoreRecommendations": false,
-	"phpcs.executablePath": "C:\\Users\\xxxx\\AppData\\Roaming\\Composer\\vendor\\bin\\phpcs.bat"
+    },
+    "[typescript]":{
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "vs-seti",
+    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
+    "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
+    "window.zoomLevel": 0,
+    "extensions.ignoreRecommendations": false,
+    "phpcs.executablePath": "C:\\Users\\mebius\\AppData\\Roaming\\Composer\\vendor\\bin\\phpcs.bat",
+    "breadcrumbs.enabled": true,
+    "php.suggest.basic": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "php.validate.enable": false,
+    "php.executablePath": "D:\\Program Files\\php-7.3.4\\php.exe",
+    "japanese-proofreading.textlint.全角文字と半角文字の間": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
