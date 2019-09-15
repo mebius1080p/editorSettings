@@ -1,0 +1,87 @@
+{
+  "class with namespace": {
+    "prefix": "class-namespace",
+    "body": [
+      "declare(strict_types=1);",
+      "namespace Hoge\\Fuga;",
+      "",
+      "/**",
+      " * ${1:HogeClass} description...",
+      " */",
+      "class ${1:HogeClass}",
+      "{",
+      "\tpublic function __construct()",
+      "\t{",
+      "\t\t//dd;",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "class with namespace"
+  },
+  "exception": {
+    "prefix": "try-catch",
+    "body": [
+      "try {",
+      "\t//dd;",
+      "} catch (Exception \\$e) {",
+      "\t//log_message(\"error\", \\$e->getMessage());",
+      "}"
+    ],
+    "description": "exception"
+  },
+  "public method": {
+    "prefix": "public-method",
+    "body": ["public function ${1:hoge}()", "{", "\t//dd;", "}"],
+    "description": "public method"
+  },
+  "private method": {
+    "prefix": "private-method",
+    "body": ["private function ${1:hoge}()", "{", "\t//dd;", "}"],
+    "description": "private method"
+  },
+  "phpunit": {
+    "prefix": "phpunit",
+    "body": [
+      "use PHPUnit\\Framework\\TestCase;",
+      "use Hote\\Fuga\\\\${1:Piyo};",
+      "",
+      "class ${1:Piyo}Test extends TestCase",
+      "{",
+      "\tpublic function testHoge()",
+      "\t{",
+      "\t\t//$$this->assertEquals(0, 0);",
+      "\t}",
+      "\tpublic function testEx()",
+      "\t{",
+      "\t\t// @expectedException Exception",
+      "\t\t// @expectedExceptionMessage hoge-",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "phpunit snippet"
+  },
+  "ajax": {
+    "prefix": "ajax",
+    "body": [
+      "\\$json = new JsonObj();",
+      "try {",
+      "\t// dd;",
+      "\t\\$json->status = \"ok\";",
+      "} catch (Exception \\$e) {",
+      "\t//log_message(\"error\", \\$e->getMessage());",
+      "}",
+      "\\$this->commonlib->json($json);"
+    ],
+    "description": "receive ajax request"
+  },
+  "render": {
+    "prefix": "render",
+    "body": [
+      "\\$param = [];",
+      "\\$this->commonlib->render(\"xxxxxxx/index.html\", \\$param);"
+    ],
+    "description": "output html"
+  }
+}

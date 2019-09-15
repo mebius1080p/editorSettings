@@ -1,0 +1,59 @@
+{
+  "entry": {
+    "prefix": "entry script",
+    "body": [
+      "\"use strict\";",
+      "document.addEventListener(\"DOMContentLoaded\", () => {",
+      "\t// const idObj = {};",
+      "\t// const urlObj = {};",
+      "}, false);",
+      ""
+    ],
+    "description": "entry script"
+  },
+  "event": {
+    "prefix": "event listener",
+    "body": [
+      "document.getElementById(${1:hoge}).addEventListener(\"${2:click}\", () => {",
+      "\t// dd;",
+      "}, false);"
+    ],
+    "description": "event listener"
+  },
+  "class-ts": {
+    "prefix": "class-ts",
+    "body": [
+      "/**",
+      " * ${1:HogeClass}",
+      " */",
+      "export class ${1:HogeClass} {",
+      "\tprivate idObj;",
+      "\tprivate urlObj;",
+      "\tconstructor(idObj, urlObj) {",
+      "\t\tthis.idObj = idObj;",
+      "\t\tthis.urlObj = urlObj;",
+      "\t\tthis.setEvent();",
+      "\t}",
+      "\tprivate setEvent(): void {",
+      "\t\t// dd;",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "typescript class"
+  },
+  "try-catch-alert": {
+    "prefix": "try-catch-alert",
+    "body": [
+      "try {",
+      "\t// dd;",
+      "} catch (error) {",
+      "\tconsole.dir(error);",
+      "\tif (\"message\" in error) {",
+      "\t\talert(error.message);",
+      "\t}",
+      "}"
+    ],
+    "description": "try catch for async await"
+  }
+}

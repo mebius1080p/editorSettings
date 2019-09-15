@@ -1,0 +1,70 @@
+{
+  "entry": {
+    "prefix": "entry script",
+    "body": [
+      "import * as React from \"react\";",
+      "import * as ReactDOM from \"react-dom\";",
+      "",
+      "\"use strict\";",
+      "document.addEventListener(\"DOMContentLoaded\", () => {",
+      "\tconsole.log(\"here\");",
+      "\tconst appElm = document.getElementById(\"app\");",
+      "\tif (appElm === null) {",
+      "\t\tthrow new Error(\"app element not found\");",
+      "\t}",
+      "\tReactDOM.render(",
+      "\t\t<React.StrictMode>",
+      "\t\t\t<div>sssssss</div>",
+      "\t\t</React.StrictMode>,",
+      "\t\tappElm",
+      "\t);",
+      "}, false);",
+      ""
+    ],
+    "description": "entry script"
+  },
+  "react": {
+    "prefix": "react",
+    "body": [
+      "import * as React from \"react\";",
+      "",
+      "interface I${1:Hoge}Props {",
+      "\tdd: string;",
+      "}",
+      "",
+      "interface I${1:Hoge}State {",
+      "\tdd: string;",
+      "}",
+      "",
+      "export class ${1:Hoge} extends React.Component<I${1:Hoge}Props, I${1:Hoge}State> {",
+      "\tconstructor(props: I${1:Hoge}Props) {",
+      "\t\tsuper(props);",
+      "\t\tthis.state = {",
+      "\t\t\tdd: \"\"",
+      "\t\t}",
+      "\t}",
+      "\tpublic render(): JSX.Element {",
+      "\t\treturn <div>hoge</div>;",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "react component"
+  },
+  "stateless": {
+    "prefix": "stateless",
+    "body": [
+      "import * as React from \"react\";",
+      "",
+      "interface I${Hoge}Props {",
+      "\tdd: string;",
+      "}",
+      "",
+      "export const ${Hoge}: React.StatelessComponent<I${Hoge}Props> = (props: I${Hoge}Props) => {",
+      "\treturn <div>sss</div>;",
+      "};",
+      ""
+    ],
+    "description": "stateless component"
+  }
+}
