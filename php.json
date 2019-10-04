@@ -2,7 +2,9 @@
   "class with namespace": {
     "prefix": "class-namespace",
     "body": [
+      "",
       "declare(strict_types=1);",
+      "",
       "namespace Hoge\\Fuga;",
       "",
       "/**",
@@ -43,6 +45,7 @@
   "phpunit": {
     "prefix": "phpunit",
     "body": [
+      "",
       "use PHPUnit\\Framework\\TestCase;",
       "use Hote\\Fuga\\\\${1:Piyo};",
       "",
