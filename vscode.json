@@ -26,10 +26,13 @@
     },
     "workbench.iconTheme": "vs-seti",
     // "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
-    "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
+    // "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "window.zoomLevel": 0,
     "extensions.ignoreRecommendations": false,
-    "phpcs.executablePath": "C:\\Users\\mebius\\AppData\\Roaming\\Composer\\vendor\\bin\\phpcs.bat",
+    // "phpcs.executablePath": "C:\\Users\\mebius\\AppData\\Roaming\\Composer\\vendor\\bin\\phpcs.bat",
+    "phpcs.executablePath": "/home/suna/.composer/vendor/bin/phpcs",
+
     "breadcrumbs.enabled": true,
     "php.suggest.basic": false,
     "workbench.editor.highlightModifiedTabs": true,
@@ -43,9 +46,21 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "php.validate.enable": false,
-    "php.executablePath": "D:\\Program Files\\php-7.3.4\\php.exe",
+    // "php.executablePath": "D:\\Program Files\\php-7.4.4\\php.exe",
+    "php.executablePath": "/home/suna/.phpenv/shims/php",
     "japanese-proofreading.textlint.全角文字と半角文字の間": false,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "[php]": {
+        "files.eol": "\n",
+        "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
+    },
+    "[yaml]": {
+		"editor.insertSpaces": true,
+		"editor.detectIndentation": true,
+		"editor.tabSize": 2
+	},
+    "editor.accessibilitySupport": "off",
+    "php.memoryLimit": "4095M"
 }
