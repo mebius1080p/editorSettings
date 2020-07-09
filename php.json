@@ -1,5 +1,5 @@
 {
-  "class with namespace":{
+	"class with namespace":{
 		"prefix": "class-namespace",
 		"body": [
 			"",
@@ -24,9 +24,11 @@
 	"exception":{
 		"prefix": "try-catch",
 		"body": [
+			"//use Illuminate\\Support\\Facades\\Log;",
 			"try {",
 			"\t//dd;",
 			"} catch (Exception \\$e) {",
+			"\t//Log::error(\\$e->getMessage());",
 			"\t//log_message(\"error\", \\$e->getMessage());",
 			"\t//echo \\$e->getMessage() . \"\\n\";",
 			"}",
@@ -83,13 +85,16 @@
 		"prefix": "ajax",
 		"body": [
 			"\\$json = new JsonObj();",
+			"//use Illuminate\\Support\\Facades\\Log;",
 			"try {",
 			"\t// dd;",
 			"\t\\$json->status = \"ok\";",
 			"} catch (Exception \\$e) {",
+			"\t//Log::error(\\$e->getMessage());",
 			"\t//log_message(\"error\", \\$e->getMessage());",
 			"}",
-			"\\$this->commonlib->json($json);",
+			"//\\$this->commonlib->json($json);",
+			"//return \\response()->json(\\$json, 200, [], JSON_UNESCAPED_UNICODE);",
 		],
 		"description": "receive ajax request"
 	},
