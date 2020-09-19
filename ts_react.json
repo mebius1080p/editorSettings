@@ -51,8 +51,8 @@
     ],
     "description": "react component"
   },
-  "stateless": {
-    "prefix": "stateless",
+  "functional": {
+    "prefix": "functional",
     "body": [
       "import * as React from \"react\";",
       "",
@@ -60,11 +60,11 @@
       "\tdd: string;",
       "}",
       "",
-      "export const ${Hoge}: React.StatelessComponent<I${Hoge}Props> = (props: I${Hoge}Props) => {",
+      "export const ${Hoge}: React.FunctionComponent<I${Hoge}Props> = (props: I${Hoge}Props) => {",
       "\treturn <div>sss</div>;",
       "};",
       ""
     ],
-    "description": "stateless component"
+    "description": "functional component"
   }
 }
